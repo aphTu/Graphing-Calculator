@@ -2,7 +2,7 @@
 Graph_info::Graph_info(){
   _window_dimensions = sf::Vector2f(SCREEN_WIDTH-SIDE_BAR,SCREEN_HEIGHT);
   _origin = sf::Vector2f((SCREEN_WIDTH-SIDE_BAR)/2.f,SCREEN_HEIGHT/2.f);
-  _points = 4000;
+  _points = 300;
   _equation ="";
   kms = 1;
   // _domain = sf::Vector2f(-5,5);
@@ -20,7 +20,7 @@ Graph_info::Graph_info(){
 void Graph_info::reset_graph(){
   _window_dimensions = sf::Vector2f(SCREEN_WIDTH-SIDE_BAR,SCREEN_HEIGHT);
   _origin = sf::Vector2f((SCREEN_WIDTH-SIDE_BAR)/2.f,SCREEN_HEIGHT/2.f);
-  _points = 4000;
+  _points = 300;
   _equation ="";
 
   if(isPolar == true){
@@ -115,7 +115,6 @@ Queue<Token*> Graph_info::tokenizer(){
         queue.push(new Operator('*'));
         continue;
       }
-
     }
     // cout << "char_holder: " << char_holder << endl;
     char_holder += _equation[i];
@@ -145,6 +144,7 @@ Queue<Token*> Graph_info::tokenizer(){
 
       char_holder = "";
     } else if (data_type == "operator"){
+      if(_equation[i+1]==')') throw Exception_handler("Syntax error: Cannot have operator in front of )");
       queue.push(new Operator(char_holder));
       char_holder = "";
     } else if (data_type == "leftparen"){
