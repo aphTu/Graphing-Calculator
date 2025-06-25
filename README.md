@@ -1,50 +1,31 @@
 
-# Work Report
-
-## Name: <ins> your name goes here </ins>
-
-## Features:
-
-- Not Implemented:
-  - what features have been implemented
-
-<br><br>
-
-- Implemented:
-  - what has been implemented
-
-<br><br>
-
-- Partly implemented:
-  - what features have not been implemented
-
-<br><br>
-
+# Graphing Calculator 
+## Description:
+- A graphing calculator similar to Desmos
+- built using SFML with the help of C++
+- It has a history feature with the last 5 graph the user have chosen to graph
+- The history is clickable, meaning clicking on any equation in the history will automatically make the calcualtor graph it
+- The user have the ability to either graph in cartesian coordinates or polar coordinates
+- Have the ability to move left, right, up, down, and zoom in or out on the graph
 - Bugs
-  - Known bugs
-
+  - If program is fullscreen, history will not be wokring properly
+- Not Implements:
+  - Did not implement the way to see specific grid lines to indicate what number it is on the screen 
 <br><br>
 
-# Reflections:
+## Commands:
+- To write a new equation for the calculator to graph use "t"
+  - This will bring up a textbox for the user to write in
+  - Include either "P" or "R", for polar or rectangular(cartesian) graph respectively, at the front of the graph followed by the equations user wished to graph
+  - use "o" to zoom out and "p" to zoom in
+  - use the arrow keys to move around
+  - use "esc" to exit the program
 
-- Any thoughts you may have and would like to share.
-
-# **output**
+# **Demonstration**
 <pre>
-<br/><br/><br/><br/>
-## Delete this line and paste the output of your basic test and then testB here
+![Image](https://github.com/user-attachments/assets/d3527061-c507-46ec-96d3-ab12b18bce5f)
 </pre>
 
 
-<br/><br/>
-
-# basic_test.cpp output:
-<pre>
-<br/><br/><br/><br/>
-</pre>
-# testB.cpp output:
-<pre>
-<br/><br/><br/><br/>
-</pre>
 
 
