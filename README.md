@@ -22,9 +22,7 @@
   - use "esc" to exit the program
 
 # **Demonstration**
-<pre>
 https://github.com/user-attachments/assets/6e7dcce3-f723-478f-af54-85fca0613300
-</pre>
 
 
 
